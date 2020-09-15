@@ -1,0 +1,15 @@
+name: 'xref_and_prefix'
+description: 'get the xref and prefix from the gatsby_build_info.json'
+inputs:
+  buildinfo:
+  description: 'the path to the gatsby_build_info.json'
+  required: true
+  default: './public/gatsby_build_info.json'
+outputs:
+  pathprefix:
+    description: 'the path prefix from the build info file'
+  xref:
+    description: 'the xref path from the build info file'
+runs:
+  using: 'node12'
+  main: 'app.js'
