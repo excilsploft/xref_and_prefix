@@ -12,4 +12,4 @@ outputs:
     description: 'the xref path from the build info file'
 runs:
   using: 'node12'
-  main: 'app.js'
+  main: 'dist/index.js'
